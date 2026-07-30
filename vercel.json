@@ -1,0 +1,4 @@
+{
+  "buildCommand": "npx vite build --config atom-takeoff-concept/vite.config.ts atom-takeoff-concept",
+  "outputDirectory": "atom-takeoff-concept/dist"
+}
