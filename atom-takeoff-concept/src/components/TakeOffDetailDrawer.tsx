@@ -594,8 +594,7 @@ export const TakeOffDetailDrawer: React.FC<TakeOffDetailDrawerProps> = ({
             </div>
           </div>
 
-          {/* SECTION 13: ATOM Shift Notes & Handover Log */}
-          <TakeOffShiftNotes theme={theme} selectedFlightNumber={flight.flightNumber} />
+  
         </div>
       </div>
     </div>

@@ -29,7 +29,7 @@ interface TakeOffSidebarProps {
 const NAV_ITEMS = [
   { id: 'dashboard', label: 'Dashboard', icon: LayoutDashboard, section: 'Operations' },
   { id: 'flights', label: 'Flight List', icon: Plane, section: 'Operations', badge: 'LIVE' },
-  { id: 'shift-notes', label: 'AtoMessage', icon: FileText, section: 'Operations', badge: 'Notes' },
+  { id: 'shift-notes', label: 'Shift Handover Notes', icon: FileText, section: 'Operations', badge: 'LOG' },
   { id: 'dispatch', label: 'Dispatch Control', icon: Send, section: 'Operations' },
   { id: 'fleet', label: 'Fleet Status', icon: Layers, section: 'Management' },
   { id: 'crew', label: 'Crew Rosters', icon: Users, section: 'Management' },
