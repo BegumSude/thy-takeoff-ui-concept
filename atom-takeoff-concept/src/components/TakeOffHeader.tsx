@@ -134,33 +134,7 @@ export const TakeOffHeader: React.FC<TakeOffHeaderProps> = ({
 
       {/* Right: Live Telemetry Indicator, UTC Clock, Theme Toggle & Controls */}
       <div className="flex items-center gap-3">
-        {/* Live OCC Telemetry Toggle Button */}
-        <button
-          onClick={onToggleLive}
-          className={`flex items-center gap-2 px-3 py-1.5 rounded-xl text-xs font-extrabold border transition-all ${
-            liveActive
-              ? isDark
-                ? 'bg-emerald-950/60 text-emerald-400 border-emerald-800/60 shadow-2xs'
-                : 'bg-emerald-50 text-emerald-700 border-emerald-300 shadow-2xs'
-              : isDark
-              ? 'bg-slate-800/60 text-slate-400 border-slate-700'
-              : 'bg-slate-100 text-slate-500 border-slate-200'
-          }`}
-          title="Toggle live telemetry feed"
-        >
-          <Radio className={`w-3.5 h-3.5 ${liveActive ? 'text-emerald-400 takeoff-pulse' : ''}`} />
-          <span>{liveActive ? 'TELEMETRY LIVE' : 'PAUSED'}</span>
-        </button>
-
-        {/* UTC+3 Istanbul Clock */}
-        <div
-          className={`hidden xl:flex items-center gap-1.5 px-3 py-1.5 rounded-xl border text-xs font-mono font-bold ${
-            isDark ? 'bg-[#0B0F19] border-[#1E2D48] text-slate-300' : 'bg-slate-50 border-slate-200 text-slate-700'
-          }`}
-        >
-          <Clock className="w-3.5 h-3.5 text-[#C8102E]" />
-          <span>{utcTime}</span>
-        </div>
+      
 
         {/* Theme Switcher Button */}
         <button

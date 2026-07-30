@@ -128,7 +128,7 @@ export const TakeOffSidebar: React.FC<TakeOffSidebarProps> = ({
                   return (
                     <button
                       key={item.id}
-                      onClick={() => onSelectNav(item.id)}
+                      onClick={() => item.id !== "dashboard" && item.id !== "ispatch control" && onSelectNav(item.id)}
                       className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-xs font-bold transition-all ${
                         isActive
                           ? isDark
